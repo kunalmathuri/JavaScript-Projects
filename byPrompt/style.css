@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn1,
+.btn2 {
+  padding: 5px 15px;
+  background: green;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
