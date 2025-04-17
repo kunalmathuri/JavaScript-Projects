@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>highestMarks</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      padding: 5px 15px;
+      margin: 20px;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <lable for="StudentA"><b>Student A</b></lable
+      ><br />
+      <input
+        type="number"
+        id="Student1"
+        placeholder="put student marks here"
+      /><br /><br />
+      <lable for="StudentB"><b>Student B</b></lable
+      ><br />
+      <input
+        type="number"
+        id="Student2"
+        placeholder="put student marks here"
+      /><br /><br />
+      <lable for="StudentC"><b>Student C</b></lable
+      ><br />
+      <input
+        type="number"
+        id="Student3"
+        placeholder="put student marks here"
+      /><br /><br />
+      <lable for="StudentD"><b>Student D</b></lable
+      ><br />
+      <input
+        type="number"
+        id="Student4"
+        placeholder="put student marks here"
+      /><br /><br />
+      <lable for="StudentE"><b>Student E</b></lable
+      ><br />
+      <input
+        type="number"
+        id="Student5"
+        placeholder="put student marks here"
+      /><br /><br />
+      <button onclick="collectMarks()">Submit</button><br />
+      <button onclick="resetForm()">Reset</button>
+    </div>
+    <div class="box">
+      <button onclick="findHighestMarks()">Find highest Marks</button>
+      <h3 id="highestmarks"></h3>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
