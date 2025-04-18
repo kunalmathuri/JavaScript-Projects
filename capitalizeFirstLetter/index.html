@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capitalize first Letter</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    body fieldset {
+      padding: 20px 60px 100px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <div>
+      <form id="nameForm">
+        <fieldset>
+          <legend>capitalize First Letter of Name!</legend>
+          <label for="name"><b>Your Name:</b></label
+          ><br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Your name"
+          /><br /><br />
+          <button type="submit">Submit</button><br />
+          <h3 id="output"></h3>
+        </fieldset>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
