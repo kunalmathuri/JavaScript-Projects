@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vowel Counter</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #box {
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 20px;
+    }
+  </style>
+  <body>
+    <div id="box">
+      <lable for="name">Enter your value</lable><br />
+      <input type="text" id="name" /><br />
+      <button onclick="vowelCounter()">Count Vowels</button><br />
+      <h3 id="output"></h3>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

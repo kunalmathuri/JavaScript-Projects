@@ -15,7 +15,7 @@ document.getElementById("nameForm").addEventListener("submit", function (e) {
     document.getElementById("output").innerText = "Please enter a name!";
     return;
   } else {
-    nameInput.style.border = "1px solid black";
+    nameInput.style.border = "1px solid black"; // Reset border if okay (during when we click input field to write something)
   }
 
   const result =
@@ -25,5 +25,5 @@ document.getElementById("nameForm").addEventListener("submit", function (e) {
   This makes it a global variable unintentionally — best to always declare variables anywhere you created it!*/
   document.getElementById("output").innerText =
     "Formatted name:" + result + nameValue.slice(1);
-  nameInput.value = "";
+  nameInput.value = ""; // clear the input field
 });
