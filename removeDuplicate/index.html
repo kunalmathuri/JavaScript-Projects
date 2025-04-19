@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Duplicate</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #box {
+      border: 2px solid black;
+      padding: 5px 50px;
+    }
+  </style>
+  <body>
+    <div id="box">
+      <h2>Products</h2>
+      <button onclick="addToCart('Apple')">Add Apple</button><br /><br />
+      <button onclick="addToCart('Banana')">Add Banana</button><br /><br />
+      <button onclick="addToCart('Orange')">Add Orange</button><br /><br />
+      <button onclick="addToCart('Grapes')">Add Grapes</button><br /><br />
+      <h3>Your Cart:</h3>
+      <ul id="cartList"></ul>
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
