@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buggy-Cart</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <h1>Add Your Cart</h1>
+    <input type="number" id="itemQuantity" placeholder="Enter quantity" />
+    <button onclick="addItem()">Add to Cart</button>
+    <h3>Buggy Cart(Quantities Halfed):</h3>
+    <ul id="buggyCartList"></ul>
+    <button onclick="fixCart()">Fix Quantities</button>
+    <h3>Corrected Cart:</h3>
+    <ul id="fixedCartList"></ul>
+    <script src="./script.js"></script>
+  </body>
+</html>
