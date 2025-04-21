@@ -20,6 +20,7 @@ function calculateBill() {
   }
   const totalBill = pricesOfDishCart.reduce((sum, cost) => sum + cost, 0);
   const billPerPerson = totalBill / totalPerson;
-  document.getElementById("totalbill").innerText = totalBill;
-  document.getElementById("billperperson").innerText = billPerPerson;
+  const billObject = { totalBill: totalBill, billPerPerson: billPerPerson };
+  document.getElementById("totalbill").innerText = billObject.totalBill;
+  document.getElementById("billperperson").innerText = billObject.billPerPerson;
 }
