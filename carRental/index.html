@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <h1>Choose No. of days & Car type</h1>
+    <label for="days">Enter No. of rental days</label><br />
+    <input type="number" id="days" placeholder="e.g 3" /><br />
+    <lable for="carType">Select car type:</lable><br />
+    <select id="carType">
+      <option value="eonomy">Economy</option>
+      <option value="midsize">Midsize</option>
+      <option value="luxury">Luxury</option></select
+    ><br />
+    <button onclick="calculateRental()">Calculate Cost</button>
+    <h3 id="result"></h3>
+    <script src="./script.js"></script>
+  </body>
+</html>
