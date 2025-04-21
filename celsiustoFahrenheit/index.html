@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celsius to Fahrenheit</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+  </style>
+  <body>
+    <h1>Add Your Temperature</h1>
+    <input for="number" id="temp" placeholder="Enter your temperature" />
+    <button onclick="addTemp()">Add Temperature</button>
+    <h3>Temperature in Celsius:</h3>
+    <ul id="inputtemp"></ul>
+    <button onclick="convertToFahrenheit()">convert To Fahrenheit</button>
+    <h3>Temperature in Fahrenheit:</h3>
+    <ul id="outputtemp"></ul>
+    <script src="./script.js"></script>
+  </body>
+</html>
