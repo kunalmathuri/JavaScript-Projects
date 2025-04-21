@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Bill</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <label for="person"> Choose no. of person</label><br />
+    <input type="number" id="person" placeholder="e.g 3" />
+    <h2>Dishes</h2>
+    <button onclick="addDishes('250')">Dish 1</button><br />
+    <button onclick="addDishes('350')">Dish 2</button><br />
+    <button onclick="addDishes('450')">Dish 3</button><br />
+    <button onclick="addDishes('550')">Dish 4</button><br />
+    <button onclick="addDishes('650')">Dish 5</button><br />
+    <h3>List of Dishes</h3>
+    <ul id="dishList"></ul>
+    <br />
+    <button onclick="calculateBill()">Calculate Bill</button>
+    <h3 id="totalbill">Total Bill:</h3>
+    <h3 id="billperperson">Bill Per Person:</h3>
+    <script src="./script.js"></script>
+  </body>
+</html>
