@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking Deposit Withdraw Application</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <label
+      >Customer Name:<input
+        type="text"
+        id="customer"
+        placeholder="Enter Customer Name" /></label
+    ><br />
+    <label
+      >Amount:<input
+        type="number"
+        id="amount"
+        placeholder="Enter Amount" /></label
+    ><br />
+    <button onclick="addCustomerAmount()">Add Customer Name & Amount</button
+    ><br />
+    <h3>Customer Details:</h3>
+    <ul id="details"></ul>
+    <input
+      type="number"
+      id="depositamount"
+      placeholder="Enter deposit amount"
+    /><br />
+    <button onclick="deposit()">Deposit Amount</button><br />
+    <h3 id="deposit">Updated Balance:</h3>
+    <input
+      type="number"
+      id="withdrawamount"
+      placeholder="Enter withdraw amount"
+    /><br />
+    <button onclick="withdraw()">Withdraw Amount</button><br />
+    <h3 id="withdraw">Updated Balance:</h3>
+    <br />
+    <script src="./script.js"></script>
+  </body>
+</html>

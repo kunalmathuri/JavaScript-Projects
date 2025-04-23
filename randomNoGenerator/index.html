@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random No. Generator</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10pxs;
+    }
+  </style>
+  <body>
+    <h1>Random number Generator</h1>
+    <button id="btn">Generate Random no.</button>
+    <h3 id="result">Random Number: Check Console</h3>
+    <script>
+      // What It Does: Math.random() gives a number between 0 and 1 (exclusive),
+      // multiplying by 100 gives 0 - 99.999..., Math.floor removes the decimal,
+      // then adding 1 makes the range 1 to 100 inclusive.
+      const randomNumber = (() => {
+        const num = Math.floor(Math.random() * 100) + 1;
+        console.log("Random Number (1-100):", num);
+        // What It Does: Returns the number so it can be reused elsewhere
+        return num;
+      })();
+    </script>
+  </body>
+</html>
