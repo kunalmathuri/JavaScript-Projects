@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate final order Price</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+  </style>
+  <body>
+    <label for="unitprice"
+      >Unit Price:<input type="number" id="unitprice" /></label
+    ><br />
+    <label for="quantity">Quantity:<input type="number" id="quantity" /></label
+    ><br />
+    <h3 id="output"></h3>
+    <button onclick="addItem()">Add to Cart</button>
+    <button onclick="calculateTotal()">Calculate Price</button>
+    <h3>Cart Items:</h3>
+    <ul id="cartList"></ul>
+    <h3 id="totalcost">Total cost:</h3>
+    <script src="./script.js"></script>
+  </body>
+</html>
