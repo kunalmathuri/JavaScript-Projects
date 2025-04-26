@@ -53,6 +53,6 @@ function withdraw() {
     latest.balance -= withdrawAmount;
     document.getElementById(
       "withdraw"
-    ).innerText = `Withdrawal ${withdrawAmount} by ${latest.customerName}. New Balance: ${withdrawAmount}`;
+    ).innerText = `Withdrawal ${withdrawAmount} by ${latest.customerName}. New Balance: ${latest.balance}`;
   }
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change the Text by Button Click</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <h1 id="heading">The most affordable learning platform</h1>
+    <button onclick="toggleText()">Toggle Text</button>
+    <script>
+      const heading = document.getElementById("heading");
+      function toggleText() {
+        if (heading.textContent === "The most affordable learning platform") {
+          heading.textContent = "PW Skill";
+        } else {
+          heading.textContent = "The most affordable learning platform";
+        }
+      }
+    </script>
+  </body>
+</html>
