@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar on scroll</title>
+    <style>
+      #progressContainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8px;
+        background-color: #eee;
+        z-index: 9999;
+      }
+      #progressBar {
+        height: 100%;
+        width: 0%;
+        background-color: #4caf50;
+      }
+      .content {
+        height: 3000px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="progressContainer"><div id="progressBar"></div></div>
+    <div class="content">
+      <h1>Keep scrolling</h1>
+      <p>Keep scrolling to see the progress bar fill up...</p>
+    </div>
+    <script>
+      window.onscroll = function () {
+        upadetProgressBar();
+      };
+      function upadetProgressBar() {
+        const winScroll =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        const height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      }
+    </script>
+  </body>
+</html>

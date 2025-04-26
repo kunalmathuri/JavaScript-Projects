@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>TODO App</h2>
+    <label for="input"
+      >Items:<input type="text" id="input" placeholder="Add your todo" /></label
+    ><br />
+    <h3>Todo list</h3>
+    <ul id="list"></ul>
+    <button onclick="addTodo()">Add Todo Items</button>
+
+    <script>
+      function addTodo() {
+        const input = document.getElementById("input");
+        inputValue = input.value.trim();
+        if (inputValue === "") {
+          alert("Please enter a todo item!");
+          return;
+        }
+        const list = document.getElementById("list");
+
+        const listItem = document.createElement("li");
+        listItem.textContent = inputValue;
+        list.appendChild(listItem);
+        input.value = "";
+      }
+    </script>
+  </body>
+</html>

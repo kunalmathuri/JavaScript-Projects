@@ -19,6 +19,15 @@
       flex-direction: column;
       gap: 5px;
     }
+    .message {
+      font-size: 30px;
+    }
+    .sucess {
+      color: green;
+    }
+    .error {
+      color: red;
+    }
   </style>
   <body>
     <h1>Log in Validator</h1>
@@ -30,6 +39,7 @@
             >Email:<input type="text" id="email" placeholder="Enter your Email"
           /></label>
         </div>
+        <br />
         <div>
           <label for="password"
             >Password:<input
@@ -42,7 +52,7 @@
         <button type="submit">Login</button>
       </fieldset>
     </form>
-    <h3 id="result"></h3>
+    <p id="result" class="message"></p>
     <script>
       const form = document.getElementById("loginForm");
       const message = document.getElementById("result");
@@ -52,8 +62,10 @@
         const password = document.getElementById("password").value;
         if (email.includes("@") && password.length >= 8) {
           message.textContent = "Valid email and password!'";
+          message.className = "message sucess";
         } else {
           message.textContent = "Invalid email or password";
+          message.className = "message , error";
         }
       });
     </script>
